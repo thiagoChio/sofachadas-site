@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thiagochio.github.io/sofachadas/sitemap.xml
