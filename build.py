@@ -77,6 +77,7 @@ def head() -> str:
         "name": E.nome,
         "description": desc,
         "image": og_img,
+        "logo": E.site_url + "assets/img/logo.jpg",
         "url": E.site_url,
         "telephone": "+" + E.whatsapp_e164,
         "email": E.email,
@@ -124,7 +125,8 @@ window.rastrearContato=function(){{try{{if(window.fbq)fbq('track','Contact');}}c
 <meta property="og:image" content="{og_img}">
 <meta property="og:url" content="{E.site_url}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0b'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-size='30' font-weight='900' text-anchor='middle' fill='%23d4a63c'%3ESF%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/logo-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap">
@@ -139,7 +141,7 @@ window.rastrearContato=function(){{try{{if(window.fbq)fbq('track','Contact');}}c
 def header() -> str:
     return f"""<header class="site-header">
   <div class="wrap">
-    <a class="logo" href="#topo" aria-label="{esc(E.nome)} — início"><b>SÓ <span class="gold-text">FACHADAS</span></b><small>{esc(E.subtitulo)}</small></a>
+    <a class="logo" href="#topo" aria-label="{esc(E.nome)} — início"><img class="logo-sf" src="assets/img/logo-180.png" alt="" width="40" height="40"><span><b>SÓ <span class="gold-text">FACHADAS</span></b><small>{esc(E.subtitulo)}</small></span></a>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">{ico("menu")}</button>
     <nav class="main-nav" id="menu" aria-label="Principal">
       <a href="#servicos">Serviços</a>
