@@ -24,7 +24,7 @@ class Empresa:
     google_avaliacao_url: str = "https://g.page/r/CYYnq_kGoN-vEBM/review"
     cnpj: str = "37.347.738/0001-30"
     ano_inicio: int = 2020
-    horario: str = "Seg a sex, 7h às 17h"
+    horario: str = "Seg a sex, 7h às 18h"
     site_url: str = "https://thiagochio.github.io/sofachadas-site/"
 
     @property

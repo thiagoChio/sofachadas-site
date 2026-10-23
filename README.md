@@ -46,7 +46,7 @@ e o formulário abrindo o WhatsApp com nome, serviço e origem (UTM). Prints em 
 ## Pendências antes de anunciar
 
 - [x] WhatsApp novo: (65) 99276-4410
-- [x] Horário confirmado: seg a sex, 7h às 17h
+- [x] Horário confirmado: seg a sex, 7h às 18h
 - [ ] Colar os IDs do Pixel da Meta e do Google Ads quando as contas de anúncio existirem
 - [x] Website e telefone atualizados no Perfil da Empresa no Google
 - [ ] Pedir avaliações no Google (o site tem botão para isso; a ficha ainda tem zero)
