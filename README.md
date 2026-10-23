@@ -35,7 +35,7 @@ e o formulário abrindo o WhatsApp com nome, serviço e origem (UTM). Prints em 
    **Publish repository** com o nome `sofachadas` e **"Keep this code private" desmarcado**.
 2. No site do GitHub, no repositório: **Settings → Pages → Build and deployment →
    Source: Deploy from a branch → Branch: `main` / pasta `/docs` → Save**.
-3. Em 1–2 minutos o site fica no ar em `https://thiagochio.github.io/sofachadas/`.
+3. Em 1–2 minutos o site fica no ar em `https://thiagochio.github.io/sofachadas-site/`.
 
 ## Domínio próprio (quando o Ju comprar)
 

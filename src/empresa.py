@@ -25,7 +25,7 @@ class Empresa:
     cnpj: str = "37.347.738/0001-30"
     ano_inicio: int = 2020
     horario: str = "Seg a sex, 7h às 17h"       # CONFIRMAR com o Ju
-    site_url: str = "https://thiagochio.github.io/sofachadas/"
+    site_url: str = "https://thiagochio.github.io/sofachadas-site/"
 
     @property
     def whatsapp_url(self) -> str:
