@@ -130,7 +130,7 @@ def testa_viewport(b, w, h, nome, reduz=False, js=True):
         pg.wait_for_timeout(800)
         u = destino.get("url", "")
         from urllib.parse import unquote
-        ok(u.startswith("https://wa.me/5565993464848?text="), f"redireciona para o WhatsApp certo")
+        ok(u.startswith("https://wa.me/5565992764410?text="), f"redireciona para o WhatsApp certo")
         ok("Teste Silva" in unquote(u) and "Totens" in unquote(u) and "instagram" in unquote(u),
            "mensagem traz nome, serviço e origem UTM")
     ctx.close()

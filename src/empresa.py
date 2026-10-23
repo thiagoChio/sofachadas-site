@@ -12,8 +12,8 @@ class Empresa:
     nome: str = "Só Fachadas MT"
     nome_curto: str = "Só Fachadas"
     subtitulo: str = "Comunicação Visual"
-    whatsapp_e164: str = "5565993464848"        # só dígitos, com 55 + DDD
-    telefone_exibicao: str = "(65) 99346-4848"
+    whatsapp_e164: str = "5565992764410"        # só dígitos, com 55 + DDD
+    telefone_exibicao: str = "(65) 99276-4410"
     email: str = "sofachadas.contato@hotmail.com"
     endereco: str = "Av. Canadá, 800 - Santa Rosa"
     cep: str = "78040-050"
