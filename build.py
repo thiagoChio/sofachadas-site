@@ -317,8 +317,12 @@ def footer() -> str:
 
 
 def main() -> None:
+    # limpa docs/ mas preserva docs/correa/ (site da Correa Metalúrgica, gerado por correa_src/build.py)
     if SAIDA.exists():
-        shutil.rmtree(SAIDA)
+        for item in SAIDA.iterdir():
+            if item.name == "correa":
+                continue
+            shutil.rmtree(item) if item.is_dir() else item.unlink()
     (SAIDA / "assets").mkdir(parents=True)
     for pasta in ("css", "js", "img"):
         shutil.copytree(RAIZ / "assets" / pasta, SAIDA / "assets" / pasta)
@@ -327,7 +331,7 @@ def main() -> None:
               f'\n<script src="assets/js/cinema.js?v={VERSAO}" defer></script>\n</body>\n</html>\n')
     (SAIDA / "index.html").write_text(pagina, encoding="utf-8")
     (SAIDA / ".nojekyll").write_text("")
-    (SAIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {E.site_url}sitemap.xml\n")
+    (SAIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {E.site_url}sitemap.xml\nSitemap: {E.site_url}correa/sitemap.xml\n")
     (SAIDA / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         f"<url><loc>{E.site_url}</loc><lastmod>{date.today().isoformat()}</lastmod></url></urlset>\n")
