@@ -4,3 +4,4 @@ scripts/prints/
 .venv/
 venv/
 .DS_Store
+correa_src/scripts/prints/
